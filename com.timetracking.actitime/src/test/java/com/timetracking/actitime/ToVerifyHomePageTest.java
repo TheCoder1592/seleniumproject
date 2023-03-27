@@ -1,11 +1,12 @@
 package com.timetracking.actitime;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
 
 public class ToVerifyHomePageTest {
 
 
-	import org.testng.Assert;
-	import org.testng.annotations.Test;
-	import org.testng.asserts.SoftAssert;
 
 
 		@Test
@@ -36,4 +37,4 @@ public class ToVerifyHomePageTest {
 //			System.out.println("User page is verified");
 //		}
 	}
-}
+

@@ -4,6 +4,7 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class ToClosechildWindow {
 public static void main(String[] args) {
@@ -18,6 +19,8 @@ for(String id:allWindowIDs)
 	driver.switchTo().window(id);
 	if(!id.equals(parentID))
 	{
+		String childTitle = driver.getTitle();
+		System.out.println(childTitle);
 		driver.close();
 	}
 }

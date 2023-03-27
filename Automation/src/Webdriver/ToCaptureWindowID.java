@@ -1,14 +1,14 @@
 package Webdriver;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class ToCaptureWindowID {
 public static void main(String[] args) {
-	ChromeDriver driver=new ChromeDriver();
+	EdgeDriver driver=new EdgeDriver();
 	String windowID=driver.getWindowHandle();
 	System.out.println(windowID);
 	
-	ChromeDriver driver1=new ChromeDriver();// to launch window
+	EdgeDriver driver1=new EdgeDriver();// to launch window
 	String windowID2=driver1.getWindowHandle();//another window ID
 	System.out.println(windowID2);
 }
