@@ -15,7 +15,7 @@ public static void main(String[] args) {
 	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS); 
 	driver.get("https://globalsqa.com/demo-site/draganddrop");
 	
-	driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='demo-frame lazyloaded']")));
+	//driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='demo-frame lazyloaded']")));
 	WebElement source = driver.findElement(By.xpath("//img[@src='images/high_tatras_min.jpg']"));
 	WebElement destination = driver.findElement(By.id("trash"));
 	
