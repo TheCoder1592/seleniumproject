@@ -15,7 +15,7 @@ public static void main(String[] args) {
 	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	
 	
-	driver.get("https://www.myntra.com/");
+	//driver.get("https://www.myntra.com/");
 	WebElement link = driver.findElement(By.linkText("MEN"));
 	Actions action=new Actions(driver);
 	action.moveToElement(link).click().perform(); //perform se h click krega men p.
